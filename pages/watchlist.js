@@ -59,7 +59,7 @@ function SearchResults() {
   const { data, error } = useSWR(terms && `/api/search?terms=${terms}`);
 
   if (!terms) {
-    return <Text>Type some terms and submit for a quick search</Text>;
+    return <Text>asta e watchlist</Text>;
   }
   if (error) {
     return (
@@ -92,7 +92,6 @@ function SearchResults() {
     </UnorderedList>
   );
 }
-
 export default function Search() {
   return (
     <Layout title="Search">
